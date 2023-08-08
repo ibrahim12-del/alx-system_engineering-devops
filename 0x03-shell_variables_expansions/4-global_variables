@@ -1,2 +1,16 @@
 #!/bin/bash
-Printenv
+
+# List local variables
+echo "Local Variables:"
+echo "----------------"
+set -o posix; set
+
+# List environment variables
+echo "Environment Variables:"
+echo "----------------------"
+env
+
+# List functions
+echo "Functions:"
+echo "----------"
+declare -F
